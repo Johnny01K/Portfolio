@@ -1,93 +1,109 @@
-// LANGUAGE DROPDOWN + I18N
-const langDropdown = document.querySelector(".lang-dropdown");
-const langCurrent  = document.querySelector(".lang-current");
-const langMenuItems = document.querySelectorAll(".lang-menu li");
+// lang.js (multi-dropdown + i18n)
+const allLangDropdowns = document.querySelectorAll(".lang-dropdown");
 
 // SUPPORTED LANGUAGES
 const SUPPORTED_LANGS = ["en", "sr", "de"];
 const DEFAULT_LANG = "en";
 
-// CACHE
+// CACHE JSON prevoda
 const translationsCache = {};
 
 // LOAD JSON
 async function loadTranslations(lang) {
-    if (translationsCache[lang]) return translationsCache[lang];
-
-    try {
-        const res = await fetch(`lang/${lang}.json`);
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        const data = await res.json();
-        translationsCache[lang] = data;
-        return data;
-    } catch (err) {
-        console.error("Cannot load translations for:", lang, err);
-        return {};
-    }
+  if (translationsCache[lang]) return translationsCache[lang];
+  try {
+    const res = await fetch(`lang/${lang}.json`, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    translationsCache[lang] = data;
+    return data;
+  } catch (err) {
+    console.error("Cannot load translations for:", lang, err);
+    return {};
+  }
 }
 
-// TEXT FOR data-i18n
+// APPLY TEXT [data-i18n]
 async function applyTranslations(lang) {
-    const dict = await loadTranslations(lang);
+  const dict = await loadTranslations(lang);
 
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.dataset.i18n;
-        const txt = dict[key];
-        if (!txt) return;
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    const txt = dict[key];
+    if (!txt) return;
 
-        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-            el.placeholder = txt;
-        } else {
-            el.textContent = txt;
-        }
-    });
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+      el.placeholder = txt;
+    } else {
+      el.textContent = txt;
+    }
+  });
 }
 
-// LANG FLAGS
-function updateLangDropdownUI(lang) {
-    const currentFlag = langCurrent.querySelector(".flag");
-    const currentCode = langCurrent.querySelector(".lang-code");
-
-    if (currentFlag) {
-        currentFlag.className = `flag flag-${lang}`;
+// UPDATE UI - DROPDOWN
+function updateAllLangDropdownUI(lang) {
+  allLangDropdowns.forEach((dd) => {
+    const codeEl = dd.querySelector(".lang-code");
+    const flagEl = dd.querySelector(".flag");
+    if (codeEl) codeEl.textContent = lang.toUpperCase();
+    if (flagEl) {
+      // reset klasa
+      flagEl.className = "flag";
+      if (lang === "en") flagEl.classList.add("flag-en");
+      if (lang === "sr") flagEl.classList.add("flag-sr");
+      if (lang === "de") flagEl.classList.add("flag-de");
     }
-    if (currentCode) {
-        currentCode.textContent = lang.toUpperCase();
-    }
+  });
 }
 
-// LANG SET
+function closeAllLangMenus(except = null) {
+  allLangDropdowns.forEach((dd) => {
+    if (dd !== except) dd.classList.remove("open");
+  });
+}
+
 async function setLanguage(lang) {
-    if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
-
-    localStorage.setItem("lang", lang);
-    updateLangDropdownUI(lang);
-    await applyTranslations(lang);
-
-    document.documentElement.lang = lang;
+  if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
+  localStorage.setItem("lang", lang);
+  updateAllLangDropdownUI(lang);
+  await applyTranslations(lang);
+  document.documentElement.lang = lang;
 }
 
-if (langDropdown && langCurrent) {
-    const savedLang = localStorage.getItem("lang") || DEFAULT_LANG;
-    setLanguage(savedLang);
+// INIT
+(function initI18n() {
+  const saved = (localStorage.getItem("lang") || DEFAULT_LANG).toLowerCase();
+  setLanguage(saved);
 
-    // OPEN/CLOSE DROPDOWN
-    langCurrent.addEventListener("click", () => {
-        langDropdown.classList.toggle("open");
+  if (!allLangDropdowns.length) return;
+
+  allLangDropdowns.forEach((dd) => {
+    const btn = dd.querySelector(".lang-current");
+    const items = dd.querySelectorAll(".lang-menu li");
+
+    if (btn) {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = dd.classList.contains("open");
+        closeAllLangMenus(dd);
+        if (!isOpen) dd.classList.add("open");
+        else dd.classList.remove("open");
+      });
+    }
+
+    items.forEach((li) => {
+      li.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        const lang = (li.getAttribute("data-lang") || DEFAULT_LANG).toLowerCase();
+        closeAllLangMenus();
+        await setLanguage(lang);
+      });
     });
+  });
 
-    langMenuItems.forEach(item => {
-        item.addEventListener("click", () => {
-            const lang = item.dataset.lang || DEFAULT_LANG;
+  document.addEventListener("click", () => closeAllLangMenus());
 
-            langDropdown.classList.remove("open");
-            setLanguage(lang);
-        });
-    });
-
-    document.addEventListener("click", (e) => {
-        if (!langDropdown.contains(e.target)) {
-            langDropdown.classList.remove("open");
-        }
-    });
-}
+  allLangDropdowns.forEach((dd) => {
+    dd.addEventListener("click", (e) => e.stopPropagation());
+  });
+})();

@@ -378,3 +378,13 @@ if (bookSlides.length) {
         });
     }
 }
+
+const burger = document.querySelector('.hamburger');
+const overlay = document.querySelector('.mobile-overlay');
+const closeMobile = () => document.body.classList.remove('nav-open');
+
+if (burger && overlay) {
+  burger.addEventListener('click', () => document.body.classList.toggle('nav-open'));
+  overlay.addEventListener('click', closeMobile);
+  document.querySelectorAll('.mobile-nav .nav-link').forEach(a => a.addEventListener('click', closeMobile));
+}
