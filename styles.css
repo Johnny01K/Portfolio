@@ -1927,3 +1927,36 @@ body.nav-open .mobile-overlay { opacity: 1; pointer-events: auto; }
 }
 
 .lang-dropdown, .lang-menu { z-index: 220; }
+
+/* ART GALLERY - BOOK PAGES FIX */
+@media (max-width: 900px) {
+  .gallery-book { margin: 24px 0; }
+  .gallery-book-inner {
+    max-width: 100%;
+    padding: 12px;
+    gap: 12px;
+    overflow: hidden;
+  }
+
+  .book-pages {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    contain: layout paint;
+  }
+
+  .book-slide {
+    border-radius: 16px;
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.7);
+  }
+
+  .book-slide.is-prev { transform: translateX(-32%) rotateY(22deg) scale(0.88); }
+  .book-slide.is-next { transform: translateX(32%)  rotateY(-22deg) scale(0.88); }
+}
+
+@media (max-width: 480px) {
+  .book-pages { height: 200px; }
+  .book-slide { border-radius: 14px; }
+}
+
+html, body { max-width: 100%; overflow-x: hidden; }
