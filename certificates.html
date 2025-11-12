@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyxphobia | Certificates</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nyxfolio.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/nyxfolio.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="certificates-page">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="images/NyxLogo.png" alt="Nyxphobia logo">
+            <span class="header-nickname">Nyxphobia</span>
+        </div>
+
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Art Gallery</a></li>
+            <li><a href="certificates.html" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+        </ul>
+    </nav>
+
+        <div class="header-options">
+            <div class="lang-dropdown">
+                <button class="lang-current" aria-label="Choose language">
+                    <span class="flag flag-en"></span>
+                    <span class="lang-code">EN</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <ul class="lang-menu">
+                    <li data-lang="en"><span class="flag flag-en"></span> EN</li>
+                    <li data-lang="sr"><span class="flag flag-sr"></span> SR</li>
+                    <li data-lang="de"><span class="flag flag-de"></span> DE</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- SUBHEADER -->
+    <div class="subheader">
+        <div class="subheader-inner">
+            <span class="subheader-item" data-i18n="sub_certif1">Certificates</span>
+            <span class="subheader-dot">•</span>
+            <span class="subheader-item" data-i18n="sub_certif2">Achievements</span>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="middle">
+        <section class="certificates-section reveal">
+
+            <div class="middle-title">
+                <h2 data-i18n="certif_title">Certificates</h2>
+            </div>
+
+            <!-- 1 -->
+            <div class="certificate-block scroll-fade">
+                <div class="certificate-image-wrapper">
+                    <img src="images/certificates/Chingu Certificate.png" alt="Google Certificate">
+                </div>
+
+                <div class="certificate-text">
+                    <h3 data-i18n="certif_sub_title1">Chingu Voyage 42 Certificate</h3>
+                    <p data-i18n="certif_info1">
+                        This certificate program covered a team-project on creating a website on a random given theme. Team members had to decide their part and finish the project within 6 weeks using HTML, CSS and JS.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="certificate-block scroll-fade">
+                <div class="certificate-image-wrapper">
+                    <img src="images/certificates/YourJob Certificate.jpg" alt="CV Image">
+                </div>
+
+                <div class="certificate-text">
+                    <h3 data-i18n="certif_sub_title2">YourJob - Time Management</h3>
+                    <p data-i18n="certif_info2">
+                        This workshop showcased how different time management affects our daily schedule, tricks on improving daily plans and organization and setting up the goals.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+    <!-- MESSAGE ME WIDGET -->
+    <div class="message-widget">
+    <button class="message-bar">
+        <span data-i18n="message_me">Message me</span>
+    </button>
+
+    <div class="message-panel">
+        <h4 data-i18n="message_me_title">Contact</h4>
+        <p data-i18n="message_me_txt">
+        If you are interested in my work, send me a message to notify me.
+        </p>
+
+        <form id="contactForm" action="https://formspree.io/f/xjkjvqyl" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New message from Portfolio" />
+        <input type="hidden" name="_language" id="fsLang" value="en" />
+        <input type="text" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" />
+
+        <label>
+            <span data-i18n="message_me_email">Your email</span>
+            <input type="email" name="email" required />
+        </label>
+
+        <label>
+            <span data-i18n="message_me_box">Message</span>
+            <textarea name="message" rows="3" required></textarea>
+        </label>
+
+        <button type="submit" class="btn-send" data-i18n="message_me_button">Send</button>
+
+        <p class="form-status" aria-live="polite"></p>
+        </form>
+    </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span class="footer-credit">© 2025. by Nyxphobia</span>
+
+        <div class="footer-content">
+            <a href="https://www.instagram.com/ninjuubi/?hl=en" target="_blank" class="footer-link" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://x.com/FBRexploit" target="_blank" class="footer-link" aria-label="Twitter / X">
+                <img src="images/Twitter.png" alt="Twitter">
+                <span>X (Twitter)</span>
+            </a>
+            <a href="https://github.com/Johnny01K" target="_blank" class="footer-link" aria-label="GitHub">
+                <img src="images/GitHub.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nikola-kekez-9370b8329" target="_blank" class="footer-link" aria-label="LinkedIn">
+                <img src="images/LinkedIn.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- IMAGE MODAL -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-content">
+            <button class="image-modal-close" aria-label="Close image">✕</button>
+
+            <div class="image-frame">
+                <div class="image-modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js" defer></script>
+    <script src="lang.js"></script>
+</body>
+</html>

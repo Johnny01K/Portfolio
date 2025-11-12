@@ -1,0 +1,109 @@
+{
+    "nav_home": "HOME",
+    "nav_projects": "PROJECTS",
+    "nav_gallery": "ART GALLERY",
+    "nav_certificates": "CERTIFICATES",
+
+    "sub_home1": "SHOWCASE",
+    "sub_home2": "ABOUT",
+    "sub_home3": "KNOWLEDGE",
+    "sub_home4": "PREVIEW",
+
+    "home_title1": "DEVELOPER & ARTIST",
+    "home_title2": "WELCOME TO NYXPHOBIA'S SHOWCASE",
+
+    "about_title": "About me",
+
+    "about_me1": "I’m an artist & web developer. Since art is my passion, I've come to like the idea of creating websites because I can create my own designs and make pages fun to explore and visit. At certain point, I've dipped my foot deeper into the web development, but it feels incomplete. In short, my dream would be making art, design, effects and animations for really passionate studios and series, such as League of Legend's Arcane series, or other spectacular projects",
+    "about_me2": "Some other stuff about me... I love video games (obviously), anime, art, protein shakes. I am calm and reasonable, if the moment calls for calm. :)",
+
+    "know_title": "My Knowledge",
+
+    "know1": "I'm an MSc in IT – Software Engineering and over the years of uni, I was slowly heading to web development category. Since I had to travel a lot and am a freelancer, having tens of different subjects and different programming languages, I didn't have much time to perfect one specific category and make many projects of my own.",
+    "know2": "I mostly work with HTML, CSS and JS. I've ran a few courses and worked on some uni projects with React, TypeScript and PHP / Laravel. I do art in Procreate iPad app and I've used Photoshop in the past, but not fully experienced with. I'm also starting to use Aseprite program for pixel art and Blender. Visit pages \"Projects\" & \"Art Gallery\" for a better preview of my work.",
+    "know3": "I am currently working as a Freelancer for a Twitch streamer Skill4ltu for over 3 years. I am part of his Twitch moderator team and I run his Discord server as an admin of over 11k members. These activities require constant and good English communication skills within the chat or server.",
+
+    "gallery_ad_title": "ART, EMOTES, LOGOS & MORE",
+    "gallery_ad_txt": "Check my full Gallery for digital & traditional art.",
+
+    "message_me": "MESSAGE ME",    
+    "message_me_title": "Contact",    
+    "message_me_txt": "If you are interested in my work, send me a message to notify me.",    
+    "message_me_email": "YOUR EMAIL",    
+    "message_me_box": "MESSAGE",
+    "message_me_button": "SEND",  
+
+    "message_me_sending": "Sending...",
+    "message_me_success": "Message received.",
+    "message_me_error":   "Oops, something went wrong. Please try again.",
+
+    "sub_projects": "GITHUB PROJECTS",
+    "projects_title": "PROJECTS",    
+    "projects_info": "These are majority of projects that I worked on during 4th year of Faculty, projects made while attending Polaris Network Internship and other. To check the Live demo of each project, click the white round button on the right side of each project.",   
+
+    "project_name1": "1. OrderUK website",    
+    "project_details1": "Practice project for food delivery as a part of Polaris Network internship. Made using HTML and SCSS.",    
+    
+    "project_name2": "2. Art Gallery",    
+    "project_details2": "University web developing project about my art. Made using HTML, CSS and JS.",    
+
+    "project_name3": "3. TFZR Faculty Website Remake",    
+    "project_details3": "Practice project for re-designing our faculty website using HTML, CSS and JS. (not finished)",  
+
+    "project_name4": "4. Neuros Webpage",    
+    "project_details4": "Practice project as a part of Polaris Network internship. Made using HTML and CSS.",  
+
+    "project_name5": "5. Neuros-Light Webpage",    
+    "project_details5": "Practice project as a part of Polaris Network internship. Made using HTML and CSS.",  
+
+    "project_name6": "6. Movies Preview Website",    
+    "project_details6": "Practice project for movie preview about favorite movies as a part of Polaris Network internship. Made using HTML and CSS.", 
+
+    "project_name7": "7. eSociety Webpage",    
+    "project_details7": "Faculty task project for subject Internet Technologies. Made using HTML, CSS, BootStrap and JS.",  
+
+    "project_name8": "8. Ikat Real Estate Webpage",    
+    "project_details8": "Faculty task project for subject Internet Technologies. Made using HTML, CSS, BootStrap and JS.",  
+
+    "project_name9": "9. Learn to Code Webpage",    
+    "project_details9": "Faculty task project for subject Internet Technologies. Made using HTML, CSS and JS.",  
+
+    "project_name10": "10. LG Webpage",    
+    "project_details10": "Faculty task project for subject Internet Technologies. Made using HTML, CSS and JS.",  
+
+    "project_name11": "11. Musician Webpage",    
+    "project_details11": "Faculty task project for subject Internet Technologies. Made using HTML, CSS and JS.",    
+
+    "project_name12": "12. Portfolio Website",    
+    "project_details12": "Personal project. Made using HTML, CSS and JS.",  
+    
+    "sub_gallery1": "DIGITAL ART",   
+    "sub_gallery2": "TWITCH EMOTES", 
+    "sub_gallery3": "LOGOS & ICONS", 
+    "sub_gallery4": "TRADITIONAL ART", 
+    "sub_gallery5": "TIMELAPSE",  
+
+    "gallery_nav1": "DIGITAL ART",
+    "gallery_nav2": "TWITCH EMOTES",
+    "gallery_nav3": "LOGOS & ICONS",
+    "gallery_nav4": "TRADITIONAL ART",
+    "gallery_nav5": "TIMELAPSE REPLAYS",
+
+    "gallery_title1": "DIGITAL ART",    
+    "gallery_title2": "AND MANY MORE UNFINISHED...",    
+    "gallery_title3": "TWITCH EMOTES",    
+    "gallery_title4": "LOGOS & ICONS",    
+    "gallery_title5": "TRADITIONAL ART",
+    "gallery_title6": "TIMELAPSE REPLAYS",
+
+    "sub_certif1": "CERTIFICATES",
+    "sub_certif2": "ACHIEVEMENTS",
+
+    "certif_title": "CERTIFICATES",
+    "certif_sub_title1": "CHINGU VOYAGE 42 CERTIFICATE",
+    "certif_info1": "This certificate program covered a team-project on creating a website on a random given theme. Team members had to decide their part and finish the project within 6 weeks using HTML, CSS and JS.",
+
+    "certif_sub_title2": "YOUR JOB - TIME MANAGEMENT",
+    "certif_info2": "This workshop showcased how different time management affects our daily schedule, tricks on improving daily plans and organization and setting up the goals."
+                    
+}

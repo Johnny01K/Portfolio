@@ -1,0 +1,108 @@
+{
+    "nav_home": "STARTSEITE",
+    "nav_projects": "PROJEKTE",
+    "nav_gallery": "KUNSTGALERIE",
+    "nav_certificates": "ZERTIFIKATE",
+
+    "sub_home1": "ÜBERSICHT",
+    "sub_home2": "ÜBER MICH",
+    "sub_home3": "KENNTNISSE",
+    "sub_home4": "VORSCHAU",
+
+    "home_title1": "ENTWICKLER UND KÜNSTLER",
+    "home_title2": "WILLKOMMEN IN NYXPHOBIAS SHOWCASE",
+
+    "about_title": "Über mich",
+
+    "about_me1": "Ich bin Künstler und Webentwickler. Da Kunst meine Leidenschaft ist, habe ich die Idee, Websites zu gestalten, besonders ins Herz geschlossen, weil ich eigene Designs erschaffen und Seiten interessant und angenehm zu erkunden machen kann. Mit der Zeit habe ich mich tiefer in die Webentwicklung eingearbeitet, doch es fühlt sich immer noch unvollständig an. Mein Traum ist es, Kunst, Design, Effekte und Animationen für leidenschaftliche Studios und Serien wie League of Legends' Arcane oder andere spektakuläre Projekte zu schaffen.",
+    "about_me2": "Ein paar weitere Dinge über mich... Ich liebe Videospiele (offensichtlich), Anime, Kunst und Proteinshakes. Ich bin ruhig und vernünftig – wenn die Situation es erfordert. :)",
+
+    "know_title": "Mein Wissen",
+
+    "know1": "Ich habe einen Masterabschluss in IT – Software Engineering. Während meines Studiums habe ich mich schrittweise auf den Bereich Webentwicklung spezialisiert. Da ich viel reisen musste und freiberuflich arbeite, hatte ich aufgrund vieler verschiedener Fächer und Programmiersprachen wenig Zeit, mich auf ein bestimmtes Gebiet zu fokussieren und viele eigene Projekte zu erstellen.",
+    "know2": "Ich arbeite hauptsächlich mit HTML, CSS und JavaScript. Ich habe einige Kurse absolviert und an Universitätsprojekten mit React, TypeScript und PHP / Laravel gearbeitet. Ich erstelle Kunst mit der Procreate-App auf dem iPad und habe in der Vergangenheit Photoshop verwendet, bin darin aber noch nicht vollständig erfahren. Ich beginne auch, das Programm Aseprite für Pixelkunst und Blender zu nutzen. Besuche die Seiten \"Projekte\" und \"Kunstgalerie\" für eine bessere Vorschau meiner Arbeit.",
+    "know3": "Derzeit arbeite ich seit über drei Jahren als Freelancer für den Twitch-Streamer Skill4ltu. Ich bin Teil seines Moderatorenteams und verwalte seinen Discord-Server als Administrator mit über 11.000 Mitgliedern. Diese Tätigkeiten erfordern ständige und gute Englischkenntnisse in der Kommunikation über Chat oder Server.",
+
+    "gallery_ad_title": "KUNST, EMOTES, LOGOS UND MEHR",
+    "gallery_ad_txt": "Sieh dir meine gesamte Galerie für digitale und traditionelle Kunst an.",
+
+    "message_me": "SCHREIB MIR",
+    "message_me_title": "Kontakt",
+    "message_me_txt": "Wenn du an meiner Arbeit interessiert bist, schreib mir eine Nachricht, um mich zu informieren.",
+    "message_me_email": "DEINE E-MAIL",
+    "message_me_box": "NACHRICHT",
+    "message_me_button": "SENDEN",
+
+    "message_me_sending": "Sende...",
+    "message_me_success": "Ich habe deine Nachricht erhalten.",
+    "message_me_error":   "Ups, etwas ist schiefgelaufen. Bitte versuche es erneut.",
+
+    "sub_projects": "GITHUB-PROJEKTE",
+    "projects_title": "PROJEKTE",
+    "projects_info": "Dies sind die meisten Projekte, an denen ich im vierten Studienjahr, während des Polaris Network Praktikums und anderer Tätigkeiten gearbeitet habe. Um die Live-Demo jedes Projekts zu sehen, klicke auf den weißen runden Button auf der rechten Seite des jeweiligen Projekts.",
+
+    "project_name1": "1. OrderUK Website",
+    "project_details1": "Übungsprojekt für Essenslieferung im Rahmen des Polaris Network Praktikums. Erstellt mit HTML und SCSS.",
+
+    "project_name2": "2. Kunstgalerie",
+    "project_details2": "Universitätsprojekt zur Entwicklung einer Website über meine Kunst. Erstellt mit HTML, CSS und JS.",
+
+    "project_name3": "3. TFZR Fakultätswebseite-Redesign",
+    "project_details3": "Übungsprojekt zur Neugestaltung der Fakultätswebsite mit HTML, CSS und JS. (nicht abgeschlossen)",
+
+    "project_name4": "4. Neuros Webseite",
+    "project_details4": "Übungsprojekt im Rahmen des Polaris Network Praktikums. Erstellt mit HTML und CSS.",
+
+    "project_name5": "5. Neuros-Light Webseite",
+    "project_details5": "Übungsprojekt im Rahmen des Polaris Network Praktikums. Erstellt mit HTML und CSS.",
+
+    "project_name6": "6. Filmvorschau-Website",
+    "project_details6": "Übungsprojekt zur Präsentation von Lieblingsfilmen im Rahmen des Polaris Network Praktikums. Erstellt mit HTML und CSS.",
+
+    "project_name7": "7. eSociety Webseite",
+    "project_details7": "Fakultätsprojekt im Fach Internet-Technologien. Erstellt mit HTML, CSS, Bootstrap und JS.",
+
+    "project_name8": "8. Ikat Immobilien Webseite",
+    "project_details8": "Fakultätsprojekt im Fach Internet-Technologien. Erstellt mit HTML, CSS, Bootstrap und JS.",
+
+    "project_name9": "9. Lerne zu programmieren Webseite",
+    "project_details9": "Fakultätsprojekt im Fach Internet-Technologien. Erstellt mit HTML, CSS und JS.",
+
+    "project_name10": "10. LG Webseite",
+    "project_details10": "Fakultätsprojekt im Fach Internet-Technologien. Erstellt mit HTML, CSS und JS.",
+
+    "project_name11": "11. Musiker Webseite",
+    "project_details11": "Fakultätsprojekt im Fach Internet-Technologien. Erstellt mit HTML, CSS und JS.",
+
+    "project_name12": "12. Portfolio Website",
+    "project_details12": "Eigenes Projekt. Erstellt mit HTML, CSS und JS.",
+
+    "sub_gallery1": "DIGITALE KUNST",
+    "sub_gallery2": "TWITCH EMOTES",
+    "sub_gallery3": "LOGOS UND SYMBOLE",
+    "sub_gallery4": "TRADITIONELLE KUNST",
+    "sub_gallery5": "ZEITRAFFER",
+
+    "gallery_nav1": "DIGITALE KUNST",
+    "gallery_nav2": "TWITCH EMOTES",
+    "gallery_nav3": "LOGOS UND SYMBOLE",
+    "gallery_nav4": "TRADITIONELLE KUNST",
+    "gallery_nav5": "ZEITRAFFER-WIEDERGABEN",
+
+    "gallery_title1": "DIGITALE KUNST",
+    "gallery_title2": "UND VIELE WEITERE UNVOLLENDETE...",
+    "gallery_title3": "TWITCH EMOTES",
+    "gallery_title4": "LOGOS UND SYMBOLE",
+    "gallery_title5": "TRADITIONELLE KUNST",
+    "gallery_title6": "ZEITRAFFER-WIEDERGABEN",
+
+    "sub_certif1": "ZERTIFIKATE",
+    "sub_certif2": "ERFOLGE",
+
+    "certif_title": "ZERTIFIKATE",
+    "certif_sub_title1": "CHINGU VOYAGE 42 ZERTIFIKAT",
+    "certif_info1": "Dieses Zertifikat umfasst ein Teamprojekt zur Erstellung einer Website zu einem zufälligen Thema. Die Teammitglieder mussten ihre Aufgaben aufteilen und das Projekt innerhalb von 6 Wochen mit HTML, CSS und JS abschließen.",
+
+    "certif_sub_title2": "YOUR JOB - ZEITMANAGEMENT",
+    "certif_info2": "In diesem Workshop wurde gezeigt, wie verschiedene Zeitmanagement-Methoden unseren Tagesablauf beeinflussen, sowie Tipps zur besseren Organisation und Zielsetzung."
+}

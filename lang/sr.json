@@ -1,0 +1,108 @@
+{
+    "nav_home": "POČETNA",
+    "nav_projects": "PROJEKTI",
+    "nav_gallery": "GALERIJA UMETNOSTI",
+    "nav_certificates": "SERTIFIKATI",
+
+    "sub_home1": "PRIKAZ",
+    "sub_home2": "O MENI",
+    "sub_home3": "ZNANJE",
+    "sub_home4": "PREGLED",
+
+    "home_title1": "PROGRAMER I UMETNIK",
+    "home_title2": "DOBRODOŠLI U NYXPHOBIA PORTFOLIO",
+
+    "about_title": "O meni",
+
+    "about_me1": "Ja sam umetnik i veb programer. Kako je umetnost moja strast, zavoleo sam ideju kreiranja veb sajtova jer mogu da pravim sopstvene dizajne i učinim stranice zanimljivim za istraživanje. U nekom trenutku sam se više posvetio veb razvoju, ali i dalje ne osećam kao da sam ispunjen. Ukratko, moj san je da radim umetnost, dizajn, efekte i animacije za studije i serije sa istinskom strašću, poput serije Arcane iz League of Legends univerzuma ili drugih spektakularnih projekata.",
+    "about_me2": "Još nešto o meni... Volim video igre (očigledno), anime, umetnost i proteinske šejkove. Smiren sam i razuman — ako trenutak to zahteva. :)",
+
+    "know_title": "Moje znanje",
+
+    "know1": "Završio sam Master studije informacionih tehnologija – Softversko inženjerstvo. Tokom studija sam se postepeno usmeravao ka veb razvoju. Pošto sam često putovao i radio kao frilenser, uz mnogo različitih predmeta i programskih jezika, nisam imao mnogo vremena da se fokusiram na jednu oblast i razvijem više svojih projekata.",
+    "know2": "Najviše radim sa HTML-om, CSS-om i JavaScriptom. Završio sam nekoliko kurseva i radio na univerzitetskim projektima (seminarskim radovima) koristeći React, TypeScript i PHP / Laravel. Bavim se digitalnom umetnošću u aplikaciji Procreate za iPad, a ranije sam koristio Photoshop, iako ga nisam u potpunosti savladao. Počinjem da koristim i Aseprite za piksel art i Blender. Posetite stranice \"Projekti\" i \"Galerija umetnosti\" za bolji pregled mog rada.",
+    "know3": "Trenutno radim kao frilenser za Twitch strimera Skill4ltu već više od 3 godine. Deo sam njegovog Twitch moderator tima i upravljam njegovim Discord serverom kao administrator sa preko 11.000 članova. Ove aktivnosti zahtevaju stalnu i dobru komunikaciju na engleskom jeziku, bilo u chatu ili na serveru.",
+
+    "gallery_ad_title": "UMETNOST, EMOTIKONI, LOGOI I VIŠE",
+    "gallery_ad_txt": "Pogledajte moju kompletnu galeriju digitalne i tradicionalne umetnosti.",
+
+    "message_me": "POŠALJITE PORUKU",
+    "message_me_title": "Kontakt",
+    "message_me_txt": "Ako ste zainteresovani za moj rad, pošaljite mi poruku kako biste me obavestili.",
+    "message_me_email": "VAŠ EMAIL",
+    "message_me_box": "PORUKA",
+    "message_me_button": "POŠALJI",
+
+    "message_me_sending": "Slanje...",
+    "message_me_success": "Poruka je uspešno poslata.",
+    "message_me_error":   "Ups, došlo je do greške. Pokušaj ponovo.",
+
+    "sub_projects": "GITHUB PROJEKTI",
+    "projects_title": "PROJEKTI",
+    "projects_info": "Ovo su glavni projekti na kojima sam radio tokom četvrte godine fakulteta, kao i projekti nastali tokom Polaris Network prakse i drugih aktivnosti. Da biste videli uživo prikaz svakog projekta, kliknite na belo okruglo dugme sa desne strane svakog projekta.",
+
+    "project_name1": "1. OrderUK veb sajt",
+    "project_details1": "Prakticni projekat za dostavu hrane, deo Polaris Network prakse. Napravljen korišćenjem HTML-a i SCSS-a.",
+
+    "project_name2": "2. Art Gallery",
+    "project_details2": "Univerzitetski projekat razvoja veb sajta o mojoj umetnosti. Napravljen korišćenjem HTML-a, CSS-a i JavaScripta.",
+
+    "project_name3": "3. Redizajn sajta fakulteta TFZR",
+    "project_details3": "Praktični projekat za redizajn fakultetskog sajta korišćenjem HTML-a, CSS-a i JS-a. (nije završen)",
+
+    "project_name4": "4. Neuros veb stranica",
+    "project_details4": "Praktični projekat kao deo Polaris Network prakse. Napravljen korišćenjem HTML-a i CSS-a.",
+
+    "project_name5": "5. Neuros-Light veb stranica",
+    "project_details5": "Praktični projekat kao deo Polaris Network prakse. Napravljen korišćenjem HTML-a i CSS-a.",
+
+    "project_name6": "6. Sajt za pregled filmova",
+    "project_details6": "Praktični projekat za pregled omiljenih filmova, deo Polaris Network prakse. Napravljen korišćenjem HTML-a i CSS-a.",
+
+    "project_name7": "7. eSociety veb stranica",
+    "project_details7": "Fakultetski projekat iz predmeta Internet tehnologije. Napravljen korišćenjem HTML-a, CSS-a, Bootstrapa i JS-a.",
+
+    "project_name8": "8. Ikat nekretnine veb stranica",
+    "project_details8": "Fakultetski projekat iz predmeta Internet tehnologije. Napravljen korišćenjem HTML-a, CSS-a, Bootstrapa i JS-a.",
+
+    "project_name9": "9. Learn to Code stranica",
+    "project_details9": "Fakultetski projekat iz predmeta Internet tehnologije. Napravljen korišćenjem HTML-a, CSS-a i JS-a.",
+
+    "project_name10": "10. LG veb stranica",
+    "project_details10": "Fakultetski projekat iz predmeta Internet tehnologije. Napravljen korišćenjem HTML-a, CSS-a i JS-a.",
+
+    "project_name11": "11. Sajt muzičara",
+    "project_details11": "Fakultetski projekat iz predmeta Internet tehnologije. Napravljen korišćenjem HTML-a, CSS-a i JS-a.",
+
+    "project_name12": "12. Portfolio sajt",
+    "project_details12": "Lični projekat. Napravljen korišćenjem HTML-a, CSS-a i JS-a.",
+
+    "sub_gallery1": "DIGITALNA UMETNOST",
+    "sub_gallery2": "TWITCH EMOTIKONI",
+    "sub_gallery3": "LOGOI I IKONICE",
+    "sub_gallery4": "TRADICIONALNA UMETNOST",
+    "sub_gallery5": "TIMELAPSE",
+
+    "gallery_nav1": "DIGITALNA UMETNOST",
+    "gallery_nav2": "TWITCH EMOTIKONI",
+    "gallery_nav3": "LOGOI I IKONICE",
+    "gallery_nav4": "TRADICIONALNA UMETNOST",
+    "gallery_nav5": "TIMELAPSE VIDEO",
+
+    "gallery_title1": "DIGITALNA UMETNOST",
+    "gallery_title2": "I MNOGO VIŠE NEDOVRŠENIH...",
+    "gallery_title3": "TWITCH EMOTIKONI",
+    "gallery_title4": "LOGOI I IKONICE",
+    "gallery_title5": "TRADICIONALNA UMETNOST",
+    "gallery_title6": "TIMELAPSE VIDEO",
+
+    "sub_certif1": "SERTIFIKATI",
+    "sub_certif2": "DOSTIGNUĆA",
+
+    "certif_title": "SERTIFIKATI",
+    "certif_sub_title1": "CHINGU VOYAGE 42 SERTIFIKAT",
+    "certif_info1": "Ovaj sertifikat obuhvata timski projekat izrade veb sajta na nasumično zadatu temu. Članovi tima su morali da podele zadatke i završe projekat u roku od 6 nedelja koristeći HTML, CSS i JS.",
+
+    "certif_sub_title2": "YOUR JOB - UPRAVLJANJE VREMENOM",
+    "certif_info2": "Ova radionica pokazala je kako različite tehnike upravljanja vremenom utiču na svakodnevni raspored, kao i trikove za poboljšanje organizacije i postavljanje ciljeva."
+}
