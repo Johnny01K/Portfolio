@@ -140,7 +140,7 @@ if (scrollTopBtn) {
     });
 }
 
-// IMAGE / VIDEO MODAL ZA GALLERY
+// IMAGE
 const modal = document.getElementById("imageModal");
 
 if (modal) {
@@ -214,7 +214,7 @@ if (modal) {
     });
 }
 
-// GALLERY SHORTCUT BUTTONS (SCROLL TO SECTION + AUTO ACTIVE)
+// GALLERY SHORTCUT BUTTONS
 const shortcutButtons = document.querySelectorAll(".gallery-shortcut-btn");
 
 if (shortcutButtons.length) {
@@ -379,12 +379,27 @@ if (bookSlides.length) {
     }
 }
 
-const burger = document.querySelector('.hamburger');
-const overlay = document.querySelector('.mobile-overlay');
-const closeMobile = () => document.body.classList.remove('nav-open');
+// MOBILE NAV (hamburger)
+const burger = document.querySelector(".hamburger");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileOverlay = document.querySelector(".mobile-overlay");
 
-if (burger && overlay) {
-  burger.addEventListener('click', () => document.body.classList.toggle('nav-open'));
-  overlay.addEventListener('click', closeMobile);
-  document.querySelectorAll('.mobile-nav .nav-link').forEach(a => a.addEventListener('click', closeMobile));
+if (burger && mobileNav && mobileOverlay) {
+    const closeMobile = () => {
+        document.body.classList.remove("nav-open");
+    };
+
+    burger.addEventListener("click", () => {
+        document.body.classList.toggle("nav-open");
+    });
+
+    mobileOverlay.addEventListener("click", closeMobile);
+
+    mobileNav.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", closeMobile);
+    });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 720) closeMobile();
+    });
 }
