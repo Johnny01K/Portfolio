@@ -403,3 +403,21 @@ if (burger && mobileNav && mobileOverlay) {
         if (window.innerWidth > 720) closeMobile();
     });
 }
+
+// 3D MODELS
+const modelViewer = document.getElementById("mainModelViewer");
+const modelCards = document.querySelectorAll(".model-card");
+
+if (modelViewer && modelCards.length) {
+    modelCards.forEach(card => {
+        card.addEventListener("click", () => {
+            const src = card.getAttribute("data-model-src");
+            if (!src) return;
+
+            modelCards.forEach(c => c.classList.remove("active"));
+            card.classList.add("active");
+
+            modelViewer.setAttribute("src", src);
+        });
+    });
+}

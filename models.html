@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyxphobia | 3D Models</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/nyxfolio.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/nyxfolio.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-anim-layer"></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="images/NyxLogo.png" alt="Nyxphobia logo">
+            <span class="header-nickname">Nyxphobia</span>
+        </div>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+                <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Art Gallery</a></li>
+                <li><a href="models.html" class="nav-link" data-i18n="nav_models">3D Models</a></li>
+                <li><a href="certificates.html" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+            </ul>
+        </nav>
+
+        <!-- HAMBURGER -->
+        <button class="hamburger" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="header-options">
+            <div class="lang-dropdown">
+                <button class="lang-current" aria-label="Choose language">
+                    <span class="flag flag-en"></span>
+                    <span class="lang-code">EN</span>
+                    <span class="arrow">▾</span>
+                </button>
+                <ul class="lang-menu">
+                    <li data-lang="en"><span class="flag flag-en"></span> EN</li>
+                    <li data-lang="sr"><span class="flag flag-sr"></span> SR</li>
+                    <li data-lang="de"><span class="flag flag-de"></span> DE</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV PANEL -->
+    <div class="mobile-overlay"></div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+        <ul>
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Projects</a></li>
+            <li><a href="gallery.html" class="nav-link" data-i18n="nav_gallery">Art Gallery</a></li>
+            <li><a href="certificates.html" class="nav-link" data-i18n="nav_certificates">Certificates</a></li>
+            <li><a href="models.html" class="nav-link" data-i18n="nav_models">3D Models</a></li>
+        </ul>
+    </nav>
+
+    <main class="middle">
+        <section class="models-section reveal">
+            <div class="models-header">
+                <h1>3D Models</h1>
+                <p>
+                    Practice models worked in Blender.
+                </p>
+            </div>
+
+            <div class="models-layout">
+                <aside class="models-list">
+                    <!-- Model 1 -->
+                    <button class="model-card active"
+                            data-model-src="models/example1.glb">
+                        <div class="model-thumb">
+                            <img src="images/3d/thumb-helmet.png" alt="Model name">
+                        </div>
+                        <div class="model-meta">
+                            <h3>Model name</h3>
+                            <span>Blender</span>
+                        </div>
+                    </button>
+
+                    <!-- Model 2 -->
+                    <button class="model-card"
+                            data-model-src="models/example2.glb">
+                        <div class="model-thumb">
+                            <img src="images/3d/thumb-sword.png" alt="Model name">
+                        </div>
+                        <div class="model-meta">
+                            <h3>Model name</h3>
+                            <span>Blender</span>
+                        </div>
+                    </button>
+
+                    <!-- Model 3 -->
+                    <button class="model-card"
+                            data-model-src="models/example3.glb">
+                        <div class="model-thumb">
+                            <img src="images/3d/thumb-room.png" alt="Model name">
+                        </div>
+                        <div class="model-meta">
+                            <h3>Model name</h3>
+                            <span>Blender</span>
+                        </div>
+                    </button>
+                </aside>
+
+                <!-- MODEL VIEWER CARD -->
+                <div class="models-viewer-wrapper">
+                    <model-viewer
+                        id="mainModelViewer"
+                        src="models/example1.glb"
+                        alt="3D model"
+                        camera-controls
+                        auto-rotate
+                        autoplay
+                        shadow-intensity="1"
+                        exposure="1.05"
+                        environment-image="neutral"
+                        style="width: 100%; height: 100%;"
+                    ></model-viewer>
+
+                    <div class="models-viewer-overlay">
+                        <span class="viewer-hint">Drag to rotate • Scroll / pinch to zoom</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SCROLL TO TOP BTN -->
+    <button class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+    <!-- MESSAGE ME WIDGET -->
+    <div class="message-widget">
+        <button class="message-bar">
+            <span data-i18n="message_me">Message me</span>
+        </button>
+
+        <div class="message-panel">
+            <h4 data-i18n="message_me_title">Contact</h4>
+            <p data-i18n="message_me_txt">
+                If you are interested in my work, send me a message to notify me.
+            </p>
+
+            <form id="contactForm" action="https://formspree.io/f/xjkjvqyl" method="POST" novalidate>
+                <input type="hidden" name="_subject" value="New message from Portfolio" />
+                <input type="hidden" name="_language" id="fsLang" value="en" />
+                <input type="text" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" />
+
+                <label>
+                    <span data-i18n="message_me_email">Your email</span>
+                    <input type="email" name="email" required />
+                </label>
+
+                <label>
+                    <span data-i18n="message_me_box">Message</span>
+                    <textarea name="message" rows="3" required></textarea>
+                </label>
+
+                <button type="submit" class="btn-send" data-i18n="message_me_button">Send</button>
+
+                <p class="form-status" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <span class="footer-credit">© 2025. by Nyxphobia</span>
+
+        <div class="footer-content">
+            <a href="https://www.instagram.com/ninjuubi/?hl=en" target="_blank" class="footer-link" aria-label="Instagram">
+                <img src="images/instagram.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://x.com/FBRexploit" target="_blank" class="footer-link" aria-label="Twitter / X">
+                <img src="images/Twitter.png" alt="Twitter">
+                <span>X (Twitter)</span>
+            </a>
+            <a href="https://github.com/Johnny01K" target="_blank" class="footer-link" aria-label="GitHub">
+                <img src="images/GitHub.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/nikola-kekez-9370b8329" target="_blank" class="footer-link" aria-label="LinkedIn">
+                <img src="images/LinkedIn.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html>
